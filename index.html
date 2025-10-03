@@ -2,98 +2,144 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TenseLess – Massage Studio Utrecht</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>TenseLess – Massage Studio Utrecht | 90–120 min op maat</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tenseless.nl/" />
+
+  <!-- Robots / Previews -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <!-- Meta SEO -->
-  <meta name="description" content="TenseLess massage studio in Utrecht biedt luxe, persoonlijke massages van 90 en 120 minuten. Ontspannend, reinigend en volledig afgestemd op jouw wensen.">
-  <meta property="og:title" content="TenseLess – Massage Studio Utrecht">
-  <meta property="og:description" content="Luxe massages in Utrecht: ontspanning, hotstone, bindweefsel en meer – op maat gemaakt voor jou.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tenseless.nl">
-  <meta property="og:image" content="Tenseless-01.png">
+  <meta name="description" content="TenseLess massage studio in Utrecht biedt luxe, persoonlijke massages van 90 en 120 minuten. Ontspannend, reinigend en volledig afgestemd op jouw wensen." />
 
-  <!-- Google Fonts: Junge + Lato -->
-  <link href="https://fonts.googleapis.com/css2?family=Junge&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:title" content="TenseLess – Massage Studio Utrecht" />
+  <meta property="og:description" content="Luxe massages in Utrecht: ontspanning, hotstone, bindweefsel en meer – op maat gemaakt voor jou." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tenseless.nl/" />
+  <meta property="og:image" content="https://tenseless.nl/Tenseless-01.png" />
+  <meta property="og:image:alt" content="TenseLess – Massage Studio Utrecht logo" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TenseLess – Massage Studio Utrecht" />
+  <meta name="twitter:description" content="Luxe, persoonlijke massages van 90 en 120 minuten in Utrecht – volledig afgestemd op jou." />
+  <meta name="twitter:image" content="https://tenseless.nl/Tenseless-01.png" />
+
+  <!-- Favicons (optioneel) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Google Fonts: performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Junge&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       padding: 0;
       background-color: #f7f6f2;
       color: #333;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
-
     .container {
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto;
       padding: 2rem;
       text-align: center;
     }
-
     h1 {
-      font-size: 1.8rem;
+      font-size: clamp(1.8rem, 1.2rem + 2vw, 2.4rem);
       margin-bottom: 0.5rem;
+      line-height: 1.2;
     }
-
-    .brand-name {
-      font-family: 'Junge', serif;
-    }
-
+    .brand-name { font-family: 'Junge', serif; }
     .subtitle {
-      color: #777;
+      color: #666;
       font-weight: 300;
       font-size: 1.2rem;
       margin-top: 0;
     }
-
     .intro, .info, .footer {
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-size: 1.08rem;
+      line-height: 1.7;
     }
-
-    a {
-      color: #444;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
+    a { color: #444; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     hr {
       margin: 3rem 0;
       border: none;
       height: 1px;
       background-color: #ddd;
     }
-
     img.logo {
-      max-width: 200px;
+      width: 200px;
+      max-width: 60%;
       height: auto;
       margin: 1rem auto 2rem;
       display: block;
     }
-
     .instagram-icon {
       width: 18px;
       height: 18px;
       vertical-align: middle;
       margin-right: 6px;
+      aspect-ratio: 1 / 1;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
     }
   </style>
+
+  <!-- Structured Data: LocalBusiness (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TenseLess – Massage Studio Utrecht",
+    "url": "https://tenseless.nl/",
+    "image": "https://tenseless.nl/Tenseless-01.png",
+    "email": "mailto:tenseless.utrecht@gmail.com",
+    "sameAs": ["https://instagram.com/tenseless.nl"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Utrecht",
+      "addressCountry": "NL"
+    },
+    "areaServed": { "@type": "City", "name": "Utrecht" },
+    "priceRange": "€€",
+    "description": "Luxe, persoonlijke massages van 90 en 120 minuten. Ontspannend, reinigend en volledig afgestemd op jouw wensen."
+  }
+  </script>
 </head>
 <body>
   <div class="container">
-    <img src="Tenseless-01.png" alt="Logo TenseLess massage studio Utrecht" class="logo" />
-    <h1><span class="brand-name">TenseLess</span> Massage Studio in Utrecht</h1>
+    <img
+      src="Tenseless-01.png"
+      alt="Logo TenseLess massage studio Utrecht"
+      class="logo"
+      width="600" height="600"
+      loading="eager" decoding="async" />
+
+    <h1><span class="brand-name">TenseLess</span> – Massage Studio Utrecht</h1>
     <h2 class="subtitle">Massage studio voor diepe ontspanning</h2>
 
     <p class="intro"><em>Ontspanning begint hier – persoonlijk en afgestemd op jou.</em></p>
 
     <p class="info">
-      Warme stenen, diepe bindweefselgrepen, de frisheid van coldstones en de zuiverende kracht van olijfzeep: 
+      Warme stenen, diepe bindweefselgrepen, de frisheid van coldstones en de zuiverende kracht van olijfzeep:
       elke sessie is een uniek ritueel afgestemd op jouw behoeften.<br><br>
       Jij hoeft alleen te voelen wat klopt – <strong>wij zorgen voor de rest.</strong>
     </p>
@@ -105,11 +151,14 @@
 
     <hr />
 
-    <p class="footer">
-      📍 Utrecht<br>
-      📧 <a href="mailto:tenseless.utrecht@gmail.com">tenseless.utrecht@gmail.com</a><br>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo" class="instagram-icon">
-      <a href="https://instagram.com/tenseless.nl" target="_blank">@tenseless.nl</a>
+    <p class="footer" itemscope itemtype="https://schema.org/PostalAddress">
+      <span aria-hidden="true">📍</span> <span itemprop="addressLocality">Utrecht</span><br>
+      <span aria-hidden="true">📧</span>
+      <a href="mailto:tenseless.utrecht@gmail.com" itemprop="email">tenseless.utrecht@gmail.com</a><br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+           alt="" class="instagram-icon" width="18" height="18" loading="lazy" decoding="async" />
+      <a href="https://instagram.com/tenseless.nl" target="_blank" rel="noopener">@tenseless.nl</a>
+      <span class="visually-hidden">Instagram</span>
     </p>
 
     <p class="footer" style="margin-top: 3rem;">
